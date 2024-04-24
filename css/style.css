@@ -1,0 +1,445 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+/* ------------------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+} */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+a {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.uptitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: Raleway;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+}
+
+.btn {
+  width: 160px;
+  height: 40px;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
+
+  background-color: transparent;
+}
+
+/* -------------------------Heder--------------------- */
+
+.header {
+  background-color: #f7f7f7;
+}
+.logo {
+}
+.navigations {
+}
+.menu {
+}
+.menu-item {
+}
+
+.menu-link {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link.current {
+  color: #ff6c00;
+}
+
+.menu-link:active {
+  color: #000;
+}
+
+.header-contact {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.header-btn {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* -------------------------Hero--------------------- */
+
+.hero {
+  background-color: #f7f7f7;
+}
+.soc-list {
+}
+.soc-list-item {
+}
+.soc-list-link {
+  color: #303030;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 2.2px;
+}
+
+.soc-list-link:hover,
+.soc-list-link:focus {
+  color: #ff6c00;
+}
+
+.hero-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 72px;
+  line-height: 1.1666666667;
+  letter-spacing: 3.6px;
+}
+
+.hero-subtitle {
+  color: #9da4bd;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+/* -------------------------About--------------------- */
+
+.about {
+}
+.picture-list {
+}
+.picture-list-item {
+}
+.about-uptitle {
+  color: #303030;
+}
+
+.about-title {
+  color: #303030;
+}
+
+.about-subtitle {
+  color: #555555;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+.about-text {
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.28px;
+}
+.about-btn {
+  color: #303030;
+}
+
+/* -------------------------Prices--------------------- */
+
+.prices {
+  background-color: #f7f7f7;
+}
+.prices-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: #ffffff;
+}
+
+.table-list {
+}
+.table-list-item {
+}
+.table-list-item-text {
+  color: #9da4bd;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+.prices-btn {
+  color: #fff;
+}
+
+/* -------------------------Benefits--------------------- */
+
+.benefits {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+
+.benefits-count {
+  color: #303030;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 2.1px;
+}
+
+.benefits-plus {
+  color: #ff6c00;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.38;
+
+  vertical-align: top;
+}
+
+.benefits-item-text {
+  color: #303030;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+}
+
+.benefits-uptitle {
+  color: #303030;
+}
+
+.benefits-title {
+  color: #303030;
+}
+
+.benefits-subtitle {
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+/* -------------------------Barbers--------------------- */
+
+.barbers {
+  background: #f7f7f7;
+}
+.barbers-uptitle {
+  color: #303030;
+}
+
+.barbers-title {
+  color: #303030;
+}
+
+.card-list {
+}
+
+.card-list-item {
+  width: 100%;
+}
+
+.card-list-item:hover .card-list__top-text {
+  transform: translateY(0);
+}
+
+.card-list__top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-list__top-text {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 106, 0, 0.681);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+  overflow: auto;
+}
+
+.card-list-item-title {
+  color: #303030;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.39;
+  letter-spacing: 0.36px;
+}
+
+.card-list-item-text {
+  color: #ff6c00;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: 0.28px;
+}
+
+.socials {
+}
+.socials-item {
+}
+.socials-link {
+}
+
+.socials-icon {
+}
+
+/* -------------------------Gallery--------------------- */
+
+.gallery {
+}
+.gallery-uptitle {
+  color: #303030;
+}
+
+.gallery-list {
+}
+.gallery-item {
+}
+
+/* -------------------------Online--------------------- */
+
+.online {
+  background: #f7f7f7;
+}
+.online-title {
+  color: #fff;
+}
+
+.online-form {
+}
+.online-wrap {
+}
+.online-input {
+}
+.online-item {
+}
+.online-label {
+}
+.online-text-wrap {
+}
+.online-text {
+}
+
+.online-btn {
+  color: #fff;
+}
+
+/* -------------------------Contacts--------------------- */
+
+.contacts {
+  background: #f7f7f7;
+}
+.contacts-title {
+  color: #fff;
+}
+
+.contacts-address {
+}
+.contacts-list {
+}
+.contacts-item {
+}
+
+.contacts-link {
+  color: #9da4bd;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+}
+
+.contacts-link-bold {
+  font-weight: 700;
+}
+
+.contacts-schedule-title {
+  color: #FFF;
+font-size: 11px;
+font-weight: 600;
+line-height: 1.36;
+text-transform: uppercase;
+}
+
+.contacts-schedule-text {
+  color: #9DA4BD;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.67;
+letter-spacing: 0.36px;
+}
