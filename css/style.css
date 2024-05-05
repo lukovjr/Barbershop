@@ -6,11 +6,6 @@ body {
   text-decoration: none;
 }
 
-ol,
-ul {
-  list-style-type: none;
-}
-
 /* ------------------------------------------------------------------- */
 html {
   box-sizing: border-box;
@@ -28,18 +23,30 @@ h3,
 h4,
 h5,
 h6,
-p,
+p {
+  margin: 0px;
+}
+
 ul {
+  list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-/* img {
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
   display: block;
   max-width: 100%;
-  height: auto;
-  width: 100%;
-} */
+  /* height: auto;
+  width: 100%; */
+}
 
 .visually-hidden {
   position: absolute;
@@ -60,6 +67,13 @@ a {
   margin-bottom: 0px;
 }
 
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .uptitle {
   font-size: 11px;
   font-weight: 600;
@@ -76,7 +90,7 @@ a {
 }
 
 .btn {
-  width: 160px;
+  min-width: 160px;
   height: 40px;
   font-size: 12px;
   font-family: inherit;
@@ -92,15 +106,29 @@ a {
 
 /* -------------------------Heder--------------------- */
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header {
-  background-color: #f7f7f7;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #be2222;
 }
 .logo {
+  margin-right: 131px;
 }
+
 .navigations {
+  margin-right: auto;
 }
-.menu {
+
+.header-menu {
+  display: flex;
+  gap: 30px;
 }
+
 .menu-item {
 }
 
@@ -132,16 +160,29 @@ a {
 }
 
 .header-btn {
+  height: 36px;
   color: #fff;
   cursor: pointer;
+  margin-left: 43px;
 }
 
 /* -------------------------Hero--------------------- */
 
-.hero {
-  background-color: #f7f7f7;
+.hero-container {
+  display: flex;
 }
+
+.hero {
+}
+
+.hero-wrap {
+  background-image: url(../image/hero.jpg);
+  padding: 272px 100px 208px 100px;
+  flex-grow: 1;
+}
+
 .soc-list {
+  width: 100px;
 }
 .soc-list-item {
 }
@@ -160,6 +201,7 @@ a {
 
 .hero-uptitle {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .hero-title {
   color: #ffffff;
@@ -167,6 +209,7 @@ a {
   font-size: 72px;
   line-height: 1.1666666667;
   letter-spacing: 3.6px;
+  margin-bottom: 20px;
 }
 
 .hero-subtitle {
@@ -174,22 +217,39 @@ a {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.36px;
+  max-width: 360px;
 }
 
 /* -------------------------About--------------------- */
+.about-container {
+  display: flex;
+  gap: 30px;
+}
 
 .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .picture-list {
+  display: flex;
+  gap: 30px;
 }
 .picture-list-item {
 }
+
+.about-wrap {
+  max-width: 470px;
+}
+
 .about-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .about-title {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .about-subtitle {
@@ -197,12 +257,14 @@ a {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.36px;
+  margin-bottom: 20px;
 }
 .about-text {
   color: #555555;
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.28px;
+  margin-bottom: 42px;
 }
 .about-btn {
   color: #303030;
@@ -211,20 +273,60 @@ a {
 /* -------------------------Prices--------------------- */
 
 .prices {
-  background-color: #f7f7f7;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #111319;
+  background-image: url(../image/pri.png);
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .prices-uptitle {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 
 .prices-title {
   color: #ffffff;
+  margin-bottom: 44px;
+}
+
+.prices-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
 }
 
 .table-list {
+  padding: 30px 20px;
+  width: calc((100% - 30px)/2);
 }
+
+.table-list:first-child {
+  background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
+}
+
+.table-list:last-child {
+  background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
+
+  Linear Gradient
+  #090B13
+  100%
+  #090B13
+  20%
+  
+}
+
+
 .table-list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
+
+.table-list-item:last-child {
+  margin-bottom: 0;
+}
+
 .table-list-item-text {
   color: #9da4bd;
   font-size: 18px;
@@ -233,15 +335,43 @@ a {
 }
 .prices-btn {
   color: #fff;
+  display: block;
+  margin: 0 auto;
 }
 
 /* -------------------------Benefits--------------------- */
 
+.benefits-container {
+  display: flex;
+  gap: 130px;
+  padding-left: 115px;
+}
+
 .benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  flex-shrink: 0;
 }
+
 .benefits-item {
+  width: 170px;
+  height: 133px;
+  background-color: #F7F7F7;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
 }
 
 .benefits-count {
@@ -271,12 +401,19 @@ a {
   line-height: 1.36;
 }
 
+.benefits-wrap {
+  max-width: 500px;
+  padding-top: 9px;
+}
+
 .benefits-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .benefits-title {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .benefits-subtitle {
@@ -290,21 +427,27 @@ a {
 /* -------------------------Barbers--------------------- */
 
 .barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background: #f7f7f7;
 }
 .barbers-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .barbers-title {
   color: #303030;
+  margin-bottom: 44px;
 }
 
 .card-list {
+  display: flex;
+  gap: 30px;
 }
 
 .card-list-item {
-  width: 100%;
+  width: calc((100% - 60px)/3);
 }
 
 .card-list-item:hover .card-list__top-text {
@@ -338,6 +481,8 @@ a {
   font-weight: 400;
   line-height: 1.39;
   letter-spacing: 0.36px;
+  margin-bottom: 8px;
+  margin-top: 30px;
 }
 
 .card-list-item-text {
@@ -362,20 +507,27 @@ a {
 /* -------------------------Gallery--------------------- */
 
 .gallery {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .gallery-uptitle {
   color: #303030;
+  margin-bottom: 44px;
 }
 
 .gallery-list {
+  display: flex;
+  gap: 30px;
 }
 .gallery-item {
+  width: calc((100% - 90px)/4);
 }
 
 /* -------------------------Online--------------------- */
 
 .online {
-  background: #f7f7f7;
+  background: #191C26;
 }
 .online-title {
   color: #fff;
@@ -403,7 +555,7 @@ a {
 /* -------------------------Contacts--------------------- */
 
 .contacts {
-  background: #f7f7f7;
+  background: #4d4343;
 }
 .contacts-title {
   color: #fff;
@@ -429,17 +581,17 @@ a {
 }
 
 .contacts-schedule-title {
-  color: #FFF;
-font-size: 11px;
-font-weight: 600;
-line-height: 1.36;
-text-transform: uppercase;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  text-transform: uppercase;
 }
 
 .contacts-schedule-text {
-  color: #9DA4BD;
-font-size: 18px;
-font-weight: 400;
-line-height: 1.67;
-letter-spacing: 0.36px;
+  color: #9da4bd;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
 }
