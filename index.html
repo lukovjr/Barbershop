@@ -20,13 +20,14 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Barbershop</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-down-right">
           <svg width="69" height="55">
             <use href="./image/icons.svg#icon-Logo"></use>
           </svg>
@@ -34,16 +35,16 @@
         <nav class="navigations">
           <ul class="header-menu">
             <li class="menu-item">
-              <a class="menu-link link current" href="#">About</a>
+              <a class="menu-link link current" href="#about">About</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="#">Services and prices</a>
+              <a class="menu-link link" href="#prices">Services and prices</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="#">Barbers</a>
+              <a class="menu-link link" href="#barbers">Barbers</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="#">Contacts</a>
+              <a class="menu-link link" href="./contacts.html">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -52,7 +53,7 @@
           >+38 044 111 11 11</a
         >
   
-        <button class="header-btn btn" type="button">Online-booking</button>
+        <button class="header-btn btn" type="button" data-modal-open>Online-booking</button>
       </div>
     </header>
 
@@ -92,7 +93,7 @@
       </<div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
        <div class="container about-container">
           <ul class="picture-list">
             <li class="picture-list-item">
@@ -104,7 +105,7 @@
           </ul>
           <div class="about-wrap">
             <p class="about-uptitle uptitle">About</p>
-            <h2 class="about-title section-title">Best Barbershop in your city</h2>
+            <h2 class="about-title section-title" >Best Barbershop in your city</h2>
             <p class="about-subtitle">
               If you want to add more confidence to your image, you should
               definitely visit us.
@@ -121,12 +122,12 @@
        </<div>
       </section>
 
-      <section class="prices">
+      <section class="prices" id="prices">
         <div class="container">
           <p class="prices-uptitle uptitle">
             Spend your time with the best masters
           </p>
-          <h2 class="prices-title section-title">Services and prices</h2>
+          <h2 class="prices-title section-title" data-aos="fade-left">Services and prices</h2>
           <div class="prices-wrap">
             <ul class="table-list">
               <li class="table-list-item">
@@ -196,7 +197,7 @@
           </ul>
           <div class="benefits-wrap">
             <p class="benefits-uptitle uptitle">Old traditional school</p>
-            <h2 class="benefits-title section-title">¿Why people come to us?</h2>
+            <h2 class="benefits-title section-title" data-aos="fade-left">¿Why people come to us?</h2>
             <p class="benefits-subtitle">
               Only good things are said about us. But it's better to see and feel 1
               time than read 10 times.
@@ -205,12 +206,12 @@
       </<div>
       </section>
 
-      <section class="barbers">
+      <section class="barbers" id="barbers">
        <div class="container">
           <p class="barbers-uptitle uptitle">
             For true enjoyers of the atmosphere
           </p>
-          <h2 class="barbers-title section-title">Our barbers</h2>
+          <h2 class="barbers-title section-title" data-aos="fade-left">Our barbers</h2>
           <ul class="card-list">
             <li class="card-list-item">
               <div class="card-list__top-wrap">
@@ -462,13 +463,127 @@
     </main>
 
     <footer>
-      <div class="container footer-container">
+      <div class="footer-container container">
         <p class="copyright" >&#169; Copyright 2020</p>
-        <ul>
+        <ul class="footer-list">
           <li><a class="soc-list-link link" href="#">Instagram</a></li>
           <li><a class="soc-list-link link" href="#">Youtube</a></li>
         </ul>
       </<div>
     </footer>
+    
+    
+    
+    
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="28" height="28">
+            <use href="./image/icons.svg#icon-close-2"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Modal title</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="input-lable">Ваше імя</label>
+            <div class="input-wrapper">
+              <input type="text" name="user-name" class="modal-input" id="user-name" placeholder="Ваше імя" minlength="3" required>
+              <p class="error">Some error</p>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./image/icons.svg#icon-person-black-18dp-1-1" ></use>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="modal-field">
+            <label for="user-emale" class="input-lable">Ваша пошта</label>
+            <div class="input-wrapper">
+              <input type="email" name="user-emale" class="modal-input" id="user-emale" placeholder="test@email" required>
+              <p class="error">Some error</p>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./image/icons.svg#icon-email-black-18dp-1" ></use>
+              </svg>
+            </div>
+          </div>
+<!-- 
+            <label class="input-lable"><span>Ваша пошта</span>
+              <span class="input-wrapper">
+                <input type="email" name="user-emale" class="modal-input" placeholder="test@email" required>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./image/icons.svg#icon-email-black-18dp-1" ></use>
+              </svg>
+              </span>
+            </label>
+            <p class="error">Some error</p>
+          -->
+
+          <div class="modal-field">
+            <label for="user-tel" class="input-lable">Ваш номер</label>
+            <div class="input-wrapper">
+              <input type="tel" pattern="^\+[0-9]{3}\s\((\d+)\)-\d{3}-\d{2}-\d{2}" title="+380 (67)-995-33-65" name="user-tel" class="modal-input" id="user-tel" placeholder="+380 (67)-995-33-65" required>
+              <!-- <p class="error">Some error</p> -->
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./image/icons.svg#icon-phone-black-18dp-1" ></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-text" class="input-lable">Ваш коментар</label>
+            <textarea name="user-text" id="user-text" class="modal-comment" placeholder="Comment"></textarea>
+          </div>
+
+          <div class="modal-field">
+            <label for="big">big</label>
+            <input type="radio" id="big" name="size" value="big" checked>
+            <label for="small">small</label>
+            <input type="radio" id="small" name="size" value="small">
+          </div>
+
+          <!-- <div class="modal-field">
+            <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden">
+            <label for="policy" class="check-text">Політика користування</label>
+          </div> -->
+
+          <div class="modal-field">
+            <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden">
+            <label for="policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./image/icons.svg#icon-check" ></use>
+                </svg>
+              </span>
+              Політика користування</label>
+          </div>
+
+          <!-- <div class="modal-field">
+            <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden">
+            <label for="policy" class="check-text">
+              Політика користування</label>
+          </div> -->
+
+<ul class="filter-list">
+  <li class="filter-item">
+    <input type="radio" class="filter-input visually-hidden" name="filter" id="all">
+    <label for="all" class="filter-btn">All</label>
+  </li>
+  <li class="filter-item">
+    <input type="radio" class="filter-input visually-hidden" name="filter" id="designe">
+    <label for="designe" class="filter-btn">Designe</label>
+  </li>
+  <li class="filter-item">
+    <input type="radio" class="filter-input visually-hidden" name="filter" id="aps">
+    <label for="aps" class="filter-btn">Aps</label>
+  </li>
+</ul>
+
+          <button type="submit" class="btn modal-btn">Send</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
