@@ -23,40 +23,46 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
-          <a href="#" class="logo" data-aos="fade-down-right">
-            <svg width="69" height="55">
+    <header class="header-contapage">
+        <div class="container header-container-contapage">
+          <a href="#" class="logo-contapage" data-aos="fade-down-right">
+            <svg class="logotip-icon-contapage" width="69" height="55">
               <use href="./image/icons.svg#icon-Logo"></use>
             </svg>
           </a>
-          <nav class="navigations">
-            <ul class="header-menu">
-              <li class="menu-item">
-                <a class="menu-link link " href="#about">About</a>
+          <nav class="navigations-contapage">
+            <ul class="header-menu-contapage">
+              <li class="menu-item-contapage">
+                <a class="menu-link-contapage link " href="#about">About</a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link link" href="#prices">Services and prices</a>
+              <li class="menu-item-contapage">
+                <a class="menu-link-contapage link" href="#prices">Services and prices</a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link link" href="#barbers">Barbers</a>
+              <li class="menu-item-contapage">
+                <a class="menu-link-contapage link" href="#barbers">Barbers</a>
               </li>
-              <li class="menu-item">
-                <a class="menu-link link current" href="./contacts.html">Contacts</a>
+              <li class="menu-item-contapage">
+                <a class="menu-link-contapage link current" href="./contacts.html">Contacts</a>
               </li>
             </ul>
           </nav>
     
-          <a class="header-contact link" href="tel:++380441111111"
+          <div class="header-contact-box">
+            <button class="header-btn-contapage btn" type="button" data-modal-open>Online-booking</button>
+          <a class="header-contact-contapage link" href="tel:++380441111111"
             >+38 044 111 11 11</a
           >
     
-          <button class="header-btn btn" type="button" data-modal-open>Online-booking</button>
+          </div>
         </div>
       </header>
     <main>
-      <h1>Контакти</h1>
+      <div class="container contapage"><h1>Контакти</h1></div>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
