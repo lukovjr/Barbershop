@@ -1,4 +1,4 @@
-const images = ['../image/hero.jpg', '../image/hero2.jpg', '../image/hero3.jpg'];
+const images = ['image/hero.jpg', 'image/hero2.jpg', 'image/hero3.jpg'];
 let currentIndex = 0;
 
 const heroWrap = document.querySelector('.hero-wrap');
